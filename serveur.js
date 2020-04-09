@@ -1,18 +1,18 @@
 let http = require('http'); //require effectue un appel à une bibliothèque de Node.js, ici la bibliothèque "http" qui nous permet de créer un serveur web.
 let url = require('url');
+let querystring = require('querystring');
 
 let server = http.createServer(function (req, res) { //La variable http représente un objet JavaScript qui va nous permettre de lancer un serveur web.
-    let page = url.parse(req.url).pathname;
-    console.log(page);
+   let params = querystring.parse(url.parse(req.url).query); // permet de disposer d'un tableau pour récupérer des paramètres : params['prenom'].
     res.writeHead(200, {"Content-Type": "text/plain"}); //code 200 dans l'en-tête de la réponse, qui signifie au navigateur "OK tout va bien", + Type MIME
-    if (page == '/') {
-        res.write('Vous etes sur la page d\'accueil');
-    } else if (page == '/gallery') {
-        res.write('Bienvenue sur la page Galerie!')
-    } else  if (page == '/game') {
-        res.write('Faites vos jeux!')
+    if ('prenom' in params && 'nom' in params) {
+        res.write('Vous vous appelez ' + params['prenom'] + ' ' + params['nom']); // on récupère les paramètres grâce à querystring
     }
-    res.end(); //on termine la réponse (avecend()) en envoyant le message de notre choix au navigateur
+    else {
+        res.write('Vous devez bien avoir un prénom et un nom, non ?');
+    }
+
+    res.end(); //on termine la réponse (avec end()) en envoyant le message de notre choix au navigateur
 });
 server.listen(8080); //le serveur est lancé et "écoute" sur le port 8080
 
