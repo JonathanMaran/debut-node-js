@@ -6,3 +6,7 @@ jeu.on('gameover', function(message) {
 }); // si on veut écouter l'événement
 
 jeu.emit('gameover', 'Vous avez perdu !'); // générer un événement et envoyer un message
+
+let monmodule = require('./monmodule');
+monmodule.direBonjour();
+monmodule.direByeBye();
