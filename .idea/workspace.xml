@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6aa0630-b886-40ae-9e73-fa353601b37a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/event.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/event.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586418229219</updated>
-      <workItem from="1586418232620" duration="7045000" />
+      <workItem from="1586418232620" duration="7889000" />
     </task>
     <servers />
   </component>
@@ -68,5 +68,9 @@
       <screen x="0" y="107" width="1920" height="1080" />
     </state>
     <state x="670" y="452" width="569" height="397" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.107.1920.1080@0.107.1920.1080" timestamp="1586430673569" />
+    <state x="623" y="346" width="672" height="678" key="search.everywhere.popup" timestamp="1586431428848">
+      <screen x="0" y="107" width="1920" height="1080" />
+    </state>
+    <state x="623" y="346" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.107.1920.1080@0.107.1920.1080" timestamp="1586431428848" />
   </component>
 </project>
